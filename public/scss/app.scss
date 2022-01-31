@@ -1,5 +1,13 @@
 @import '../../node_modules/bootstrap/scss/functions';
 
+::-webkit-calendar-picker-indicator {
+    filter: invert(0.2);
+}
+
+textarea {
+    resize: none !important;
+}
+
 $body-bg: #22262B;
 $body-color: #A5A5AA;
 $font-family-sans-serif: 'Open Sans', sans-serif;
@@ -7,9 +15,53 @@ $font-family-sans-serif: 'Open Sans', sans-serif;
 $input-bg: #1F222A;
 $input-border-color: #1F2228;
 $input-placeholder-color: #43454A;
+$input-focus-box-shadow: none;
+$input-focus-border-color: #323640;
+
+$form-label-margin-bottom: 0.2rem;
+
+$form-select-disabled-color: #43454A;
+$form-select-disabled-bg: #1F2228;
+$form-select-focus-box-shadow: none;
+
+
+$table-bg: #2F3338;
+$table-group-separator-color: none;
+$table-border-color: #34373D;
 
 .sidebar {
     background: #2D3036;
+    border-right: 1px solid #34373d;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 0.625rem 0;
+}
+
+.sidebar li span {
+    display: block;
+    color: #72767A;
+    font-size: 0.625rem;
+    margin: 0.625rem 0;
+    padding: 0.312rem 0;
+    border-bottom: 1px solid #34373d;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: #A5A5AA;
+    transition: color 400ms;
+    padding: 0.4rem 0;
+}
+
+.sidebar li a:hover {
+    color: #4B6DE5;
 }
 
 .box {
@@ -17,15 +69,16 @@ $input-placeholder-color: #43454A;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
-    border: 1px solid #1F2228;
+    border: 1px solid #34373d;
+    box-shadow: rgba(31, 34, 40, 0.16) 0px 1px 4px;
     background-color: #2D3036;
     margin: 0.8rem 0;
 }
 
 .box > .header {
     color: #A5A5AA;
-    border-bottom: 1px solid #2F3338;
     padding: 0.8rem;
+    border-bottom: 1px solid #34373d;
 }
 
 .box > .content {
@@ -35,13 +88,13 @@ $input-placeholder-color: #43454A;
 
 .box-inline {
     display: block;
-    border: 1px solid #34373D;
+    border: 1px solid #34373d;
     padding: 0.8rem;
     margin: 0.8rem 0;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
-    background-color: #2F3338;
+    background-color: #2f3338;
 }
 
 .box-inline > .content {
@@ -54,7 +107,7 @@ $input-placeholder-color: #43454A;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1rem;
     align-items: flex-start;
 }
 
@@ -80,6 +133,7 @@ $input-placeholder-color: #43454A;
     color: #ffffff;
     background: transparent;
     width: auto;
+    font-size: 0.875rem;
 }
 
 img.avatar {
@@ -98,7 +152,8 @@ img.avatar {
 }
 
 .label.green {
-
+    background: #67c50b;
+    border-color: #67c50b;
 }
 
 .label.red {
@@ -108,6 +163,48 @@ img.avatar {
 .label.blue {
     background: #389CFF;
     border-color: #389CFF;
+}
+
+.form-label span {
+    // font-size: 0.625rem;
+    color: #73757B;
+}
+
+.timeline-feed {
+    padding: 1rem 1rem 0 1rem;
+    list-style: none;
+}
+
+.timeline-feed .feed-item {
+    position: relative;
+    padding-bottom: 29px;
+    padding-left: 30px;
+    border-left: 2px solid #303439;
+}
+
+.timeline-feed .feed-item .date {
+    display: block;
+    position: relative;
+    top: -5px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.timeline-feed .feed-item .timeline-text {
+    position: relative;
+    top: -3px;
+}
+
+.timeline-feed .feed-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    border-radius: 30px;
+    background: #67C60C;
 }
 
 @media (min-width: 767.98px) { 
@@ -126,7 +223,18 @@ img.avatar {
         width: 80px;
         height: 80px;
     }
-    
+
+    .sidebar ul {
+        width: 100%;
+    }
+
+    .sidebar li a {
+       display: block;
+    }
+        
+    .box.sm {
+        width: 25%;
+    }  
  }
 
 
@@ -143,7 +251,6 @@ img.avatar {
 @import '../../node_modules/bootstrap/scss/tables';
 @import '../../node_modules/bootstrap/scss/spinners';
 @import '../../node_modules/bootstrap/scss/helpers';
-
 
 
 @import '../../node_modules/bootstrap/scss/buttons';

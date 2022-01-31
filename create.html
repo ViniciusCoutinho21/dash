@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Desenvolvimento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/app.css">
+    <link rel="stylesheet" href="public/css/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-auto col-md-3 col-xl-2 col-xxl-2 px-0 px-sm-2 sidebar">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-4 min-vh-100">
+                    <div class="d-flex gap-3 align-items-center mb-3">
+                        <img src="https://img.utdstc.com/icon/015/d1c/015d1cecf14c3ef529e92d788304fe58aa571c4e3ebaf4d78d5eea44f693c844:200"
+                            alt="" class="avatar">
+                        <div class="d-none d-sm-flex flex-column">
+                            Vinicius Coutinho
+                            <a href="#" class="text-decoration-none text-reset"><small>Sair</small></a>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <span class="d-none d-sm-block">MENU</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-house-fill"></i>
+                                <div class="d-none d-sm-inline-block">Página Inicial</div>
+                            </a>
+                        </li>
+                        <li>
+                            <span class="d-none d-sm-block">PROJETOS</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-grid-fill"></i>
+                                <div class="d-none d-sm-inline-block">Projetos</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-envelope-fill"></i>
+                                <div class="d-none d-sm-inline-block">Envio de Demandas</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-stack"></i>
+                                <div class="d-none  d-sm-inline-block">Solicitações</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col mb-2">
+                <div class="box sm">
+                    <div class="header">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            Eventos
+                            <div class="label purple">
+                                30/jan
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="label blue mb-2">
+                            <a href="#" class="text-decoration-none text-reset"> Reunião Diária</a>
+                        </div>
+                        <div class="label purple">
+                            <a href="#" class="text-decoration-none text-reset"> Entrega: Avaliação de Experiencia.</a>
+                        </div>
+                    </div>
+                </div>
+                <form action="" method="post">
+                    <div class="box">
+                        <div class="header">
+                           Envio de Demandas
+                        </div>
+                        <div class="content">
+                            <div class="row mb-2">
+                                <div class="col-12 col-sm-12 col-md-8 col-xl-8 col-xxl-8 mb-2">
+                                    <div class="mb-2">
+                                        <label for="name" class="form-label">Nome do Projeto:</label>
+                                        <input type="text" name="name" id="name" placeholder="Digite o nome do projeto"
+                                            class="form-control" autocomplete="off" required>
+                                    </div>
+
+                                    <div class="row mb-2">
+                                        <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-xxl-4 mb-2">
+                                            <label for="requester_name" class="form-label">Solicitante:</label>
+                                            <input type="text" name="requester_name" id="requester_name"
+                                                placeholder="Nome do solicitante do projeto" class="form-control"
+                                                autocomplete="off" required>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-8 col-xl-8 col-xxl-8">
+                                            <label for="departament" class="form-label">Solicitante:</label>
+                                            <select name="departament" id="departament" class="form-select">
+                                                <option value disabled selected>Selecione um Setor</option>
+                                                <option value="1">Administrativo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-2">
+                                        <div class="col-12 col-sm-12 col-md-8 col-xl-8 col-xxl-8  mb-2">
+                                            <label for="email" class="form-label">E-mail:</label>
+                                            <input type="email" name="email" id="email" placeholder="Digite o e-mail do solicitante"
+                                                class="form-control" autocomplete="off" required>
+                                        </div>
+
+                                        <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-xxl-4">
+                                            <label for="phone" class="form-label">Celular:</label>
+                                            <input type="text" name="phone" id="phone" placeholder="(00) 00000-0000"
+                                                class="form-control" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="description" class="form-label">Descrição:</label>
+                                        <textarea name="description" id="description" cols="30" rows="10" class="form-control"
+                                            placeholder="Transcreva aqui o descrição do projeto" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4 col-xl-4 col-xxl-4">
+                                    <div class="row mb-2">
+                                        <div class="col mb-2">
+                                            <label for="started" class="form-label">Data de Ínicio:</label>
+                                            <input type="date" name="started" id="started" class="form-control" required>
+                                        </div>
+                                        <div class="col">
+                                            <label for="deadline" class="form-label">Data Final:</label>
+                                            <input type="date" name="deadline" id="deadline" class="form-control" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <label for="url" class="form-label">Documentação:</label>
+                                        <input type="text" name="url" id="url" placeholder="https://whimsical.com/" class="form-control"
+                                            autocomplete="off" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="category" class="form-label">Catégoria:</label>
+                                        <select name="category" id="category" class="form-select" required>
+                                            <option value disabled selected>Selecione uma catégoria</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label for="note" class="form-label">Observações: <span>(opcional)</span></label>
+                                        <textarea name="note" id="note" cols="30" rows="10"
+                                            placeholder="Transcreva aqui as observações deste projeto"
+                                            class="form-control"></textarea>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Enviar Proposta</button>
+                </form>
+            </div>
+
+        </div>
+</body>
+<script src="public/js/vanilla-masker.min.js"></script>
+<script type="text/javascript">
+    VMasker(document.getElementById('phone')).maskPattern('(99) 99999-9999');
+</script>
+</html>
