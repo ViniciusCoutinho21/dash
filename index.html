@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,116 +12,246 @@
     <link rel="stylesheet" href="public/css/app.css">
     <link rel="stylesheet" href="public/css/bootstrap-icons.css">
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-auto col-md-3 col-xl-2 px-0 px-sm-2 sidebar">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-100">
-
+            <div class="col-auto col-md-3 col-xl-2 col-xxl-2 px-0 px-sm-2 sidebar">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-4 min-vh-100">
+                    <div class="d-flex gap-3 align-items-center mb-3">
+                        <img src="https://img.utdstc.com/icon/015/d1c/015d1cecf14c3ef529e92d788304fe58aa571c4e3ebaf4d78d5eea44f693c844:200"
+                            alt="" class="avatar">
+                        <div class="d-none d-sm-flex flex-column">
+                            Vinicius Coutinho
+                            <a href="#" class="text-decoration-none text-reset"><small>Sair</small></a>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <span class="d-none d-sm-block">MENU</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-house-fill"></i>
+                                <div class="d-none d-sm-inline-block">Página Inicial</div>
+                            </a>
+                        </li>
+                        <li>
+                            <span class="d-none d-sm-block">PROJETOS</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-grid-fill"></i>
+                                <div class="d-none d-sm-inline-block">Projetos</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-envelope-fill"></i>
+                                <div class="d-none d-sm-inline-block">Envio de Demandas</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-stack"></i>
+                                <div class="d-none  d-sm-inline-block">Solicitações</div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="col">
-                <div class="box w-auto w-md-25">
+            <div class="col mb-2">
+                <div class="box sm">
                     <div class="header">
                         <div class="d-flex flex-wrap justify-content-between align-items-center">
-                            Reunião Diria
+                            Eventos
                             <div class="label purple">
                                 30/jan
                             </div>
                         </div>
                     </div>
                     <div class="content">
-                        <div class="d-flex flex align-items-center gap-3">
-                            <div class="label blue">
-                                <i class="bi bi-google"></i>
-                            </div>
-                            Google Mit
+                        <div class="label blue mb-2">
+                            <a href="#" class="text-decoration-none text-reset"> Reunião Diária</a>
                         </div>
-                       
+                        <div class="label purple">
+                            <a href="#" class="text-decoration-none text-reset"> Entrega: Avaliação de Experiencia.</a>
+                        </div>
                     </div>
                 </div>
-        
-        
-                <div class="box">
+                <div class="box mb-2">
                     <div class="header">
-                        <div class="d-flex flex-wrap justify-content-between align-items-center">
-                            Lista de Projetos
-                            <form action="" method="POST">
-                                <div class="input-group input-group-sm">
-                                    <input type="text" class="form-control" placeholder="Pesquisar Projeto..">
-                                    <button class="btn btn-primary"><i class="bi bi-search"></i></button>
-                                </div>
-                            </form>
+                        <div class="d-flex justify-content-between align-items-center">
+                            Projeto: Avaliação de Experiencia
+                            <a href="" class="btn btn-sm btn-primary"><i class="bi bi-pen-fill"></i></a>
                         </div>
                     </div>
                     <div class="content">
-                        
-                        <div class="box-inline">
-                            <div class="content">
-                               <div class="detail">
-                                    <img src="https://img.utdstc.com/icon/015/d1c/015d1cecf14c3ef529e92d788304fe58aa571c4e3ebaf4d78d5eea44f693c844:200" alt="" class="avatar">
-                                    <div class="group">
-                                        <span>Projeto</span>
-                                        Avaliação de Experiencia
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-8 col-xl-9 col-xxl-9 order-last order-sm-first">
+                                <h1>Descrição:</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate mollitia, ipsa
+                                    quod ad molestias porro vel omnis eaque! Quos a quisquam quibusdam, quasi tenetur
+                                    laudantium iste velit accusamus eum harum.
+                                </p>
+                                <h2>Observações:</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ullam natus quo esse,
+                                    nesciunt minus itaque, vero illo ab similique ut asperiores voluptatum magni minima
+                                    maxime dolorem inventore nobis placeat.
+                                </p>
+
+                                <div class="d-flex flex-column flex-sm-row gap-2 mb-3">
+                                    <div>
+                                        <small>Data de Ínicio:</small>
+                                        <div class="label blue fs-6">
+                                            30/01/2022
+                                        </div>
                                     </div>
-                                    <div class="group">
-                                        <span>Responsável</span>
-                                        Vinicius Coutinho
+                                    <div>
+                                        <small>Data de Final:</small>
+                                        <div class="label blue fs-6">
+                                            30/01/2022
+                                        </div>
                                     </div>
-                                    <div class="group">
-                                        <span>Solicitante</span>
-                                        Lucinete Brandão
+
+                                    <div>
+                                        <small>Catégoria:</small>
+                                        <div class="label blue fs-6">
+                                            Desenvolvimento
+                                        </div>
                                     </div>
-                                    <div class="group">
-                                        <span>Previsão de Entrega</span>
-                                        10/01/2022
+
+                                </div>
+
+                                <h3>NPS</h3>
+                                <table class="table table-bordered mb-2">
+                                    <thead>
+                                        <tr>
+                                            <th>Questão</th>
+                                            <th>Nota</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1. O Projeto estava dentro das expectativas?</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2. O Projeto foi entregue no Prazo?</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3. Em uma escala de 0 a 10, o cronograma e as fases de seu projeto estão
+                                                sendo (ou foram) bem acompanhadas pelos desenvolvedores?</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4. De modo geral, como você avalia a qualidade do atendimento ao cliente
+                                                realizado pelo nosso setor?</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5. Nossos Analistas conseguem captar adequadamente suas dúvidas e
+                                                preocupações?</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6. O cronograma e as fases de seu projeto estão sendo (ou foram) bem
+                                                acompanhadas pelo nosso pessoal?</td>
+                                            <td>10</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td><strong>NPS</strong></td>
+                                            <td class="label fs-6 green text-center" style="border-radius: 0px;">100%
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <h5>Existe algo que gostaria de acrescentar? (Dúvida, reclamações, sugestões ou Elogio)</h5>
+                                <blockquote>
+                                    <p>O Projeto ficou bem Clean, Organizado e fácil manuseio pelos gerentes, ficou dentro
+                                    das nossas expectativas, parabéns!</p>
+                                    <figcaption class="blockquote-footer">
+                                        Avalido por: <cite title="Source Title">Thiago - 24/11/2021 às 13:26</cite>
+                                    </figcaption>
+                                </blockquote>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-xl-3 col-xxl-3">
+                                <div class="box">
+                                    <div class="header">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="https://img.utdstc.com/icon/015/d1c/015d1cecf14c3ef529e92d788304fe58aa571c4e3ebaf4d78d5eea44f693c844:200"
+                                                alt="" class="avatar">
+                                            <div>
+                                                <div class="d-block mb-2">Lucinete</div>
+                                                <small>RH</small>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="group">
-                                        <span>Artia ID</span>
-                                        18181881
+                                    <div class="content">
+                                        <div>
+                                            <div class="d-block fw-bold">Email:</div>
+                                            <small>lucinete@promofarma.com.br</small>
+                                        </div>
+                                        <div>
+                                            <div class="d-block fw-bold">Celular:</div>
+                                            <small>(11) 00000-0000</small>
+                                        </div>
                                     </div>
                                 </div>
-                                <a href="" class="btn btn-sm btn-primary">Visualizar</a>
+
+                                <div class="box">
+                                    <div class="content">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <img src="https://img.utdstc.com/icon/015/d1c/015d1cecf14c3ef529e92d788304fe58aa571c4e3ebaf4d78d5eea44f693c844:200"
+                                                alt="" class="avatar">
+                                            <div>
+                                                <small>Responsável</small>
+                                                <div class="d-block mb-2">Vinicius Coutinho</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="label text-center fs-6 fw-bold green">
+                                    <i class="bi bi-whatsapp"></i> <a href="" class="text-decoration-none text-reset">Enviar link da avaliação</a>
+                                </div>
+
+                                <div class="box">
+                                    <div class="header">Timeline</div>
+                                    <div class="content">
+                                        <ol class="timeline-feed">
+                                            <li class="feed-item">
+                                                <div class="feed-item-list">
+                                                    <span class="date">20/01 09:58:04</span>
+                                                    <div class="timeline-text">Proposta Enviada</div>
+                                                </div>
+                                            </li>
+                                            <li class="feed-item">
+                                                <div class="feed-item-list">
+                                                    <span class="date">20/01 17:57:50</span>
+                                                    <div class="timeline-text text-success fw-bold">Proposta Aceita
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-        
-                        <div class="box-inline">
-                            <div class="content">
-                               <div class="detail">
-                                <img src="https://img.utdstc.com/icon/015/d1c/015d1cecf14c3ef529e92d788304fe58aa571c4e3ebaf4d78d5eea44f693c844:200" alt="" class="avatar">
-                            
-                                <div class="group">
-                                    <span>Projeto</span>
-                                    Avaliação de Experiencia
-                                </div>
-                                <div class="group">
-                                    <span>Responsável</span>
-                                    Vinicius Coutinho
-                                </div>
-                                <div class="group">
-                                    <span>Solicitante</span>
-                                    Lucinete Brandão
-                                </div>
-                                <div class="group">
-                                    <span>Previsão de Entrega</span>
-                                    10/01/2022
-                                </div>
-                                <div class="group">
-                                    <span>Artia ID</span>
-                                    18181881
-                                </div>
-                            </div>
-                            <a href="" class="btn btn-sm btn-primary">Visualizar</a>
-                               </div>
-        
-                        </div>
-        
                     </div>
                 </div>
-
             </div>
         </div>
-        
+
     </div>
 </body>
+<script src="public/js/vanilla-masker.min.js"></script>
+<script type="text/javascript">
+    VMasker(document.getElementById('phone')).maskPattern('(99) 99999-9999');
+</script>
+
 </html>
